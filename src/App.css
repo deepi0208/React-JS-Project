@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,81 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+p {
+  font-family: cursive;
+}
+.slide {
+  text-shadow: 5px 5px 5px rgb(0, 153, 255);
+}
+.nav-head:hover{
+  color: rgb(0, 153, 255);
+}
+.click:hover {
+  background-color:aliceblue;
+}
+.click {
+  box-shadow: 5px 5px 3px white;
+}
+.homepage .image {
+  filter:blur(4px);
+  position: relative;
+}
+.homepage h1 {
+  position: absolute;
+  top: 70%;
+  padding-left: 7%;
+  /* font-family: "cursive"; */
+  text-shadow: 5px 5px 5px rgb(0, 153, 255);
+  /* animation:moving 4s 5; */
+  font-size: 50px;
+}
+.homepage button {
+  position: absolute;
+  top:85%;
+  left:25%;
+  box-shadow: 5px 5px 5px rgb(165, 97, 97);
+}
+.homepage button:hover {
+  color:black;
+}
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: 25%;
+  }
+}
+.card-title {
+  font-family: Lucida Handwriting;
+  color: darkblue;
+  font-weight: bold;
+  font-size: 25px;
+}
+.contact img{
+  position: absolute;
+}
+.contact .container {
+  position: relative;
+}
+@keyframes zoomin {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.animate img{
+animation: zoomin 4s 2 linear ;
+}
+
+.col h3 {
+  font-size: 35px;
+  color: black;
+  font-family: Lucida Handwriting;
+  text-shadow: 5px 5px 5px rgb(183, 185, 187);
 }
