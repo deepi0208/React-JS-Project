@@ -40,69 +40,69 @@ function HomeLayout() {
 </div>
 </nav>
 
-{/* <footer class="text-center bg-body-tertiary">
-  <div class="container pt-4">
-    <section class="mb-4">
-      <a
-        data-mdb-ripple-init
-        class="btn btn-link btn-floating btn-lg text-body m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
+<Outlet />
 
+<footer class="text-center text-lg-start">
+    <div class="text-center p-3 text-light" style={{backgroundColor: "rgb(46, 124, 177)"}}>
+      © 2024 Copyright: <br />
+      <a class="text-light" href="https://mdbootstrap.com/">Milo's House Preschool Literacy</a>
+      <div class="p-2">
       <a
         data-mdb-ripple-init
-        class="btn btn-link btn-floating btn-lg text-body m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-twitter"></i
-      ></a>
-
-      <a
-        data-mdb-ripple-init
-        class="btn btn-link btn-floating btn-lg text-body m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-google"></i
-      ></a>
-
-      <a
-        data-mdb-ripple-init
-        class="btn btn-link btn-floating btn-lg text-body m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-instagram"></i
-      ></a>
-
-      <a
-        data-mdb-ripple-init
-        class="btn btn-link btn-floating btn-lg text-body m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <a
-        data-mdb-ripple-init
-        class="btn btn-link btn-floating btn-lg text-body m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-github"></i
-      ></a>
-    </section>
-  </div>
-  <div class="text-center p-3" style={{backgroundColor: "rgba(0, 0, 0, 0.05)"}}>
-    © 2020 Copyright:
-    <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-  </div>
-</footer> */}
-        <Outlet />
+          class="btn text-white btn-floating m-1 rounded-5"
+          style={{backgroundColor: "#3b5998"}}
+          href="#!"
+          role="button"
+          ><i class="bi bi-facebook"></i></a>
+  
+        {/* <!-- Twitter --> */}
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1 rounded-5"
+          style={{backgroundColor: "#55acee"}}
+          href="#!"
+          role="button"
+          ><i class="bi bi-twitter"></i></a>
+  
+        {/* <!-- Google --> */}
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1 rounded-5"
+          style={{backgroundColor: "#dd4b39"}}
+          href="#!"
+          role="button"
+          ><i class="bi bi-google"></i></a>
+  
+        {/* <!-- Instagram --> */}
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1 rounded-5"
+          style={{backgroundColor: "#ac2bac"}}
+          href="#!"
+          role="button"
+          ><i class="bi bi-instagram"></i
+        ></a>
+  
+        {/* <!-- Linkedin --> */}
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1 rounded-5"
+          style={{backgroundColor: "#0082ca"}}
+          href="#!"
+          role="button"
+          ><i class="bi bi-linkedin"></i></a>
+        {/* <!-- Github --> */}
+        <a
+          data-mdb-ripple-init
+          class="btn text-white btn-floating m-1 rounded-5"
+          style={{backgroundColor:"#333333"}}
+          href="#!"
+          role="button"
+          ><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </footer>
+        
         </>
     )
 }

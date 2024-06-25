@@ -21,7 +21,7 @@ function Home() {
         </div>
         <div class="col">
            <h1 class="text-danger fw-bold pt-5 pb-3" style={{fontFamily:"Lucida Handwriting"}}>About Us <img src="https://www.miloshouse.com.au/img/monkey-99bcbe39.svg" width="100" height="80" class="" alt="..." /></h1>
-           <p class="fs-5">Milo's House Preschool Literacy is a unique learning environment for children aged 3-6 years. It is a multi-sensory phonemic awareness/phonics based program where children come together in small groups to have fun, learn to recognise the sounds of the alphabet and the links between reading, writing, and spelling.</p>
+           <p>Milo's House Preschool Literacy is a unique learning environment for children aged 3-6 years. It is a multi-sensory phonemic awareness/phonics based program where children come together in small groups to have fun, learn to recognise the sounds of the alphabet and the links between reading, writing, and spelling.</p>
            <button type="button" class="btn btn-light rounded-5 mt-4 mb-4 fw-bold" style={{fontFamily:"cursive"}}><a class="text-dark link-offset-2 link-underline link-underline-opacity-0" href="./About_Us">Learn More</a></button>
         </div>
      </div>
