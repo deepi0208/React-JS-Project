@@ -25,9 +25,6 @@ function HomeLayout() {
     <a class="nav-link text-dark fw-bold" href="./Time_Table" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">Time Table</span></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link text-dark fw-bold" href="./Testi" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">Testimonials</span></a>
-  </li>
-  <li class="nav-item">
     <a class="nav-link text-dark fw-bold" href="./Contact" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">Contact Us</span></a>
   </li>
   <li class="nav-item">

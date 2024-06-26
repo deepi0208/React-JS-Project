@@ -6,8 +6,13 @@ function Home() {
         <>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></link>
         <div class="homepage">
+  {/* <div class="banner">
+    <video autoplay loop muted plays-inline>
+        <source src="./child.mp4" type="video/mp4" />
+    </video> */}
        <img src="./kid1.jpg" width="100%" height="700" alt="..." class="image" />
        <h1 style={{fontFamily:"Lucida Handwriting"}}>Preschool Education </h1><br />
+       {/* </div> */}
 
        <button type="button" class="btn btn-danger rounded-4 mt-4 mb-4 fw-bold" id="myBtn" style={{fontFamily:"cursive"}}><a class="text-light link-offset-2 link-underline link-underline-opacity-0" href="./Contact">ADMISSION <i class="bi bi-arrow-right-circle"></i></a></button>
 

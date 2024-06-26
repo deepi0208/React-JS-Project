@@ -3,8 +3,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Contact from './Pages/Contact'
 import Home from './Pages/Home'
 import Programs from './Pages/Programs'
-import About_Us from './Pages/About_Us';
-import Testi from './Pages/Testi'
+import About_Us from './Pages/About_Us'
 import Time_Table from './Pages/Time_Table'
 import HomeLayout from './Layout/HomeLayout'
 
@@ -21,7 +20,6 @@ function App() {
             <Route index element={<Home />}></Route>
             <Route path='/Contact' element={<Contact />}></Route>
             <Route path='/About_Us' element={<About_Us />}></Route>
-            <Route path='/Testi' element={<Testi />}></Route>
             <Route path='/Time_Table' element={<Time_Table />}></Route>
             <Route path='/Programs' element={<Programs />}></Route>
             </Route>
