@@ -66,6 +66,9 @@ p {
 .click {
   box-shadow: 5px 5px 3px white;
 }
+.navbutton:hover {
+  color: white;
+}
 .homepage .image {
   filter:blur(4px);
   position: relative;
@@ -101,12 +104,6 @@ p {
   color: darkblue;
   font-weight: bold;
   font-size: 25px;
-}
-.contact img{
-  position: absolute;
-}
-.contact .container {
-  position: relative;
 }
 @keyframes zoomin {
   0% {

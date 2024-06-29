@@ -4,11 +4,11 @@ function Programs() {
     return(
         <>
         <h1 class="text-danger fw-bold text-center" style={{fontFamily:"Lucida Handwriting", paddingTop:"120px", paddingBottom:"50px"}}>OUR PROGARAMS <img src="https://www.miloshouse.com.au/img/monkey-99bcbe39.svg" width="100" height="80" class="" alt="..." /></h1>
-        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsXGqUVOHCqKrWHp9CWbLHSP4wKjYcVVmosQ&s" alt="childrens" class="rounded-5" height="250px" width="400px" />
            <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed fw-bold fs-4" style={{fontFamily:"Lucida Handwriting"}} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+      <button class="accordion-button collapsed fw-bold fs-4 p-4" style={{fontFamily:"Lucida Handwriting"}} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
         Kinder 3
       </button>
     </h2>
@@ -41,7 +41,7 @@ function Programs() {
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
-      <button class="accordion-button collapsed fw-bold fs-4" style={{fontFamily:"Lucida Handwriting"}} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+      <button class="accordion-button collapsed fw-bold fs-4 p-4 bg-info" style={{fontFamily:"Lucida Handwriting"}} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
         Kinder 4
       </button>
     </h2>

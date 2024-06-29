@@ -14,8 +14,7 @@ function Home() {
        <h1 style={{fontFamily:"Lucida Handwriting"}}>Preschool Education </h1><br />
        {/* </div> */}
 
-       <button type="button" class="btn btn-danger rounded-4 mt-4 mb-4 fw-bold" id="myBtn" style={{fontFamily:"cursive"}}><a class="text-light link-offset-2 link-underline link-underline-opacity-0" href="./Contact">ADMISSION <i class="bi bi-arrow-right-circle"></i></a></button>
-
+       <button type="button" class="btn btn-danger rounded-4 mt-4 mb-4 fw-bold" id="myBtn" style={{fontFamily:"cursive"}}><a class="text-light link-offset-2 link-underline link-underline-opacity-0" href="./Admission">ADMISSION <i class="bi bi-arrow-right-circle"></i></a></button>
        </div>
 
     <div class="rounded-5 pb-4 bg-primary-subtle">

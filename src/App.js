@@ -1,6 +1,6 @@
 
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Contact from './Pages/Contact'
+import Contact from './Pages/Admission'
 import Home from './Pages/Home'
 import Programs from './Pages/Programs'
 import About_Us from './Pages/About_Us'

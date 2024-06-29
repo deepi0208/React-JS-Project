@@ -2,6 +2,7 @@ import {Link, Outlet} from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+
 function HomeLayout() {
     return(
         <>
@@ -25,7 +26,17 @@ function HomeLayout() {
     <a class="nav-link text-dark fw-bold" href="./Time_Table" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">Time Table</span></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link text-dark fw-bold" href="./Contact" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">Contact Us</span></a>
+    <a class="nav-link text-dark fw-bold" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">
+      <button type="button" class="btn btn-info rounded-5 fw-bold" data-bs-toggle="modal" data-bs-target="#signup">SignUp</button>
+
+      </span></a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link text-dark fw-bold" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">
+      <button type="button" class="btn bg-info rounded-5 fw-bold" data-bs-toggle="modal" data-bs-target="#login">Login </button>
+
+      </span></a>
   </li>
   <li class="nav-item">
     <a class="nav-link text-dark fw-bold" href="./" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head"><i class="bi bi-instagram"></i></span></a>
@@ -37,9 +48,77 @@ function HomeLayout() {
 </div>
 </nav>
 
+{/* SIGNUP */}
+
+<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel" style={{fontFamily:"Lucida Handwriting"}}>Signup</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-1">
+            <label for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Username</label>
+            <input type="text" class="form-control" id="recipient-name" />
+          </div>
+          <div class="mb-1">
+            <label for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>EmailId</label>
+            <input type="text" class="form-control" id="recipient-name" />
+          </div>
+          <div class="mb-1">
+            <label for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Contact</label>
+            <input type="text" class="form-control" id="recipient-name" />
+          </div>
+          <div class="mb-1">
+            <label for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Password</label>
+            <input type="text" class="form-control" id="recipient-name" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info rounded-5">SignUp</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* LOGIN */}
+
+
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel" style={{fontFamily:"Lucida Handwriting"}}>Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-1">
+            <label for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Username</label>
+            <input type="text" class="form-control" id="recipient-name" />
+          </div>
+          <div class="mb-1">
+            <label for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Password</label>
+            <input type="text" class="form-control" id="recipient-name" />
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-info rounded-5">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <Outlet />
 
-<footer class="text-center text-lg-start">
+<footer class="text-center text-lg-start pt-5">
     <div class="text-center p-3 text-light" style={{backgroundColor: "rgb(46, 124, 177)"}}>
       © 2024 Copyright: <br />
       <a class="text-light" href="https://mdbootstrap.com/">Milo's House Preschool Literacy</a>
