@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function Home() {
@@ -14,7 +13,8 @@ function Home() {
        <h1 style={{fontFamily:"Lucida Handwriting"}}>Preschool Education </h1><br />
        {/* </div> */}
 
-       <button type="button" class="btn btn-danger rounded-4 mt-4 mb-4 fw-bold" id="myBtn" style={{fontFamily:"cursive"}}><a class="text-light link-offset-2 link-underline link-underline-opacity-0" href="./Admission">ADMISSION <i class="bi bi-arrow-right-circle"></i></a></button>
+       <button type="button" class="btn btn-danger rounded-4 mt-4 mb-4 fw-bold" id="myBtn" style={{fontFamily:"cursive"}}><a class="text-light link-offset-2 link-underline link-underline-opacity-0" 
+       href="./Admission">ADMISSION <i class="bi bi-arrow-right-circle"></i></a></button>
        </div>
 
     <div class="rounded-5 pb-4 bg-primary-subtle">
@@ -67,6 +67,60 @@ function Home() {
 </div>
 <button type="button" class="btn btn-danger rounded-4 mt-4 mb-4 fw-bold" style={{fontFamily:"cursive", marginLeft: "170px"}}><a class="text-light link-offset-2 link-underline link-underline-opacity-0" href="./Programs">LEARN MORE <i class="bi bi-caret-right-fill"></i></a></button>
   </div>
+
+<div class="testi bg-danger-subtle p-3">
+<h1 class="text-danger fw-bold pt-5 pb-3 text-center" style={{fontFamily:"Lucida Handwriting"}}>Testimonials <img src="https://www.miloshouse.com.au/img/monkey-99bcbe39.svg" width="100" height="80" class="" alt="..." /></h1>
+<p class="text-center" style={{fontFamily: "lucida Handwriting"}}>Hear from our Parents!</p><br />
+<div class="container">
+  <div class="row">
+    <div class="col"><div class="card mb-3" style={{maxWidth: "540px"}} >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://www.miloshouse.com.au/img/testimonials/liz-ba8a1557.jpg" class="img-fluid p-4 rounded-circle" alt="..." />
+      <h5 class="card-title ps-5">Jeanie</h5>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <p class="card-text">Milo’s House has made such a huge difference to my daughter’s knowledge of sounds and letters. She has begun spelling and writing with confidence and to my amazement she was reading books within weeks of starting! My daughter loves attending class each week.
+        </p>
+      </div>
+    </div>
+  </div>
+</div></div>
+    <div class="col"><div class="card mb-3" style={{maxWidth: "540px"}} >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://www.miloshouse.com.au/img/testimonials/cassie-75f8db86.jpg" class="img-fluid rounded-circle p-4" alt="..." />
+      <h5 class="card-title ps-5">Cassie</h5>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <p class="card-text">Beau started Milo’s House at the start of the year and I am so impressed with his progress. He is confidently sounding words out and showing a keen interest in literacy.<br />Each session is filled with a variety of fun games and activities to keep her engaged and having fun whilst learning.
+        </p>
+      </div>
+    </div>
+  </div>
+</div></div>
+  </div>
+
+  <div class="col" style={{paddingLeft: "290px"}}><div class="card mb-3" style={{maxWidth: "540px"}} >
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="https://www.miloshouse.com.au/img/testimonials/jeanie-368c5691.jpg" class="img-fluid rounded-circle p-4" alt="..." />
+      <h5 class="card-title ps-5">Liz</h5>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        
+        <p class="card-text">I can highly recommend Milo’s House to anyone wanting to give their child a fun and educational head start before they begin school.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+ </div>
         </>
     )
 }

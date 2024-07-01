@@ -28,7 +28,6 @@ function HomeLayout() {
   <li class="nav-item">
     <a class="nav-link text-dark fw-bold" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">
       <button type="button" class="btn btn-info rounded-5 fw-bold" data-bs-toggle="modal" data-bs-target="#signup">SignUp</button>
-
       </span></a>
   </li>
   
@@ -78,8 +77,8 @@ function HomeLayout() {
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-info rounded-5">SignUp</button>
+        <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal" style={{fontFamily:"Lucida Handwriting"}}>Close</button>
+        <button type="button" class="btn btn-info rounded-5" style={{fontFamily:"Lucida Handwriting"}}>SignUp</button>
       </div>
     </div>
   </div>
@@ -87,12 +86,11 @@ function HomeLayout() {
 
 {/* LOGIN */}
 
-
 <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel" style={{fontFamily:"Lucida Handwriting"}}>Login</h1>
+        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel" style={{fontFamily:"Lucida Handwriting"}}>Login</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -105,12 +103,11 @@ function HomeLayout() {
             <label for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Password</label>
             <input type="text" class="form-control" id="recipient-name" />
           </div>
-          
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-info rounded-5">Login</button>
+        <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal" style={{fontFamily:"Lucida Handwriting"}}>Close</button>
+        <button type="button" class="btn btn-info rounded-5" style={{fontFamily:"Lucida Handwriting"}}>Login</button>
       </div>
     </div>
   </div>

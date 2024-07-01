@@ -87,6 +87,7 @@ p {
   top:85%;
   left:25%;
   box-shadow: 5px 5px 5px rgb(165, 97, 97);
+  animation: shake 4s infinite linear;
 }
 .homepage button:hover {
   color:black;
@@ -123,4 +124,13 @@ animation: zoomin 4s 2 linear ;
   color: black;
   font-family: Lucida Handwriting;
   text-shadow: 5px 5px 5px rgb(183, 185, 187);
+}
+@keyframes shake {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
 }
