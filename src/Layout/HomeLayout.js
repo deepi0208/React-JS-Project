@@ -2,8 +2,36 @@ import {Link, Outlet} from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-
 function HomeLayout() {
+
+const submitForm = (e) => {
+        e.preventDefault()
+        const user = {
+            username: e.target.username.value,
+            email: e.target.email.value,
+            contact: e.target.contact.value,
+            password: e.target.password.value
+        }
+        fetch("http://localhost:5000/signup/insert",{
+            method: "POST",
+            headers: {
+                "Accept": "application/json",
+                "Contact-Type": "application/json"
+            },
+            body: JSON.stringify(user)
+        })
+        .then(res => res.json())
+        .then((data)=>{
+            if(data.userFound){
+                alert("SignUp success")
+            }
+            else{
+                alert("SignUp Failed")
+            }
+        })
+    }
+    
+
     return(
         <>
     <nav class="navbar fixed-top bg-light p-0">
@@ -14,7 +42,7 @@ function HomeLayout() {
 
   <ul class="nav justify-content-end">
   <li class="nav-item">
-    <a class="nav-link fw-bold over" href="#"><Link to="/" class="nav-icon text-dark link-underline-light" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">Home</span></Link></a>
+    <a class="nav-link fw-bold" href="#"><Link to="/" class="nav-icon text-dark link-underline-light" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">Home</span></Link></a>
   </li>
   <li class="nav-item">
     <a class="nav-link active text-dark fw-bold" aria-current="page" href="./About_Us" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">About Us</span></a>
@@ -26,28 +54,29 @@ function HomeLayout() {
     <a class="nav-link text-dark fw-bold" href="./Time_Table" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">Time Table</span></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link text-dark fw-bold" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">
+    <a class="nav-link text-dark fw-bold" style={{fontFamily:"Lucida Handwriting"}}>
       <button type="button" class="btn btn-info rounded-5 fw-bold" data-bs-toggle="modal" data-bs-target="#signup">SignUp</button>
-      </span></a>
+      </a>
   </li>
   
   <li class="nav-item">
-    <a class="nav-link text-dark fw-bold" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head">
+    <a class="nav-link text-dark fw-bold" style={{fontFamily:"Lucida Handwriting"}}>
       <button type="button" class="btn bg-info rounded-5 fw-bold" data-bs-toggle="modal" data-bs-target="#login">Login </button>
 
-      </span></a>
+      </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link text-dark fw-bold" href="./" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head"><i class="bi bi-instagram"></i></span></a>
+    <a class="nav-link text-dark fw-bold" href="./https://www.instagram.com/" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head"><i class="bi bi-instagram"></i></span></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link text-dark fw-bold" href="./" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head"><i class="bi bi-facebook"></i></span></a>
+    <a class="nav-link text-dark fw-bold" href="./https://www.facebook.com/" style={{fontFamily:"Lucida Handwriting"}}><span class="nav-head"><i class="bi bi-facebook"></i></span></a>
   </li>
 </ul>
 </div>
 </nav>
 
 {/* SIGNUP */}
+
 
 <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -57,32 +86,35 @@ function HomeLayout() {
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form>
+        <form onSubmit={(e)=>{submitForm(e)}}>
           <div class="mb-1">
-            <label for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Username</label>
+            <label name="username" for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Username</label>
             <input type="text" class="form-control" id="recipient-name" />
           </div>
           <div class="mb-1">
-            <label for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>EmailId</label>
+            <label name="email" for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>EmailId</label>
             <input type="text" class="form-control" id="recipient-name" />
           </div>
           <div class="mb-1">
-            <label for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Contact</label>
+            <label name="contact" for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Contact</label>
             <input type="text" class="form-control" id="recipient-name" />
           </div>
           <div class="mb-1">
-            <label for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Password</label>
+            <label name="password" for="recipient-name" class="col-form-label" style={{fontFamily:"cursive"}}>Password</label>
             <input type="text" class="form-control" id="recipient-name" />
+            </div>
+            <div class="mb-1">
+            <button type="button" class="btn btn-info rounded-5" style={{fontFamily:"Lucida Handwriting"}}>SignUp</button>
           </div>
-        </form>
+          <div class="modal-footer">
+         <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal" style={{fontFamily:"Lucida Handwriting"}}>Close</button>
+        
+       </div>
+         </form>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary rounded-5" data-bs-dismiss="modal" style={{fontFamily:"Lucida Handwriting"}}>Close</button>
-        <button type="button" class="btn btn-info rounded-5" style={{fontFamily:"Lucida Handwriting"}}>SignUp</button>
       </div>
     </div>
   </div>
-</div>
 
 {/* LOGIN */}
 

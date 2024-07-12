@@ -1,11 +1,12 @@
-
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-// import Admission from './Pages/Admission'
+import Admission from './Pages/Admission'
 import Home from './Pages/Home'
 import Programs from './Pages/Programs'
 import About_Us from './Pages/About_Us'
 import Time_Table from './Pages/Time_Table'
 import HomeLayout from './Layout/HomeLayout'
+// import { Link } from "react-router-dom";
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js'
@@ -21,10 +22,11 @@ function App() {
             <Route path='/About_Us' element={<About_Us />}></Route>
             <Route path='/Time_Table' element={<Time_Table />}></Route>
             <Route path='/Programs' element={<Programs />}></Route>
-            {/* <Route path='/Admission' element={<Admission />}></Route> */}
+            <Route path='/Admission' element={<Admission />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>
+        
       </>
   )
 }

@@ -87,7 +87,7 @@ p {
   top:85%;
   left:25%;
   box-shadow: 5px 5px 5px rgb(165, 97, 97);
-  animation: shake 4s infinite linear;
+  /* animation: shake 4s infinite linear; */
 }
 .homepage button:hover {
   color:black;

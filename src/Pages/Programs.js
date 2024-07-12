@@ -3,11 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function Programs() {
     return(
         <>
-        <div class="bg-primary-subtle">
+        {/* <div class="bg-primary-subtle">
         <h1 class="text-danger fw-bold text-center bg-primary-subtle" style={{fontFamily:"Lucida Handwriting", paddingTop:"120px", paddingBottom:"50px"}}>OUR PROGARAMS <img src="https://www.miloshouse.com.au/img/monkey-99bcbe39.svg" width="100" height="80" class="" alt="..." /></h1>
         <img src="./childrens.jpg" alt="childrens" class="rounded-circle ps-5" height="250px" width="400px" />
         <img src="./hand.tmp" alt="childrens" class="rounded-circle" height="250px" width="400px" style={{margin: "30px"}} />
-        <img src="./download.jfif" alt="childrens" class="rounded-circle ps-5" height="250px" width="400px" />
+        <img src="./download.jfif" alt="childrens" class="rounded-circle ps-5" height="250px" width="400px" /> */}
         
            <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
@@ -74,7 +74,7 @@ function Programs() {
         </div>
   </div>
 </div>
-</div>
+{/* </div> */}
         </>
     )
 }
